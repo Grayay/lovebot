@@ -1,0 +1,10 @@
+from .mood import router as mood_router
+from .miss import router as miss_router
+from .goals import router as goals_router
+from .plans import router as plans_router
+from .shopping import router as shopping_router
+from .discussions import router as discussions_router
+from .expenses import router as expenses_router
+from .memories import router as memories_router
+from .dates import router as dates_router
+from .wishlist import router as wishlist_router
