@@ -28,9 +28,10 @@ async def goal_create(message: Message, state: FSMContext):
 
     await message.answer("Цель сохранена 🎯")
     await state.clear()
-await log_event(
-    actor=message.from_user.id,
-    module="goals",
-    event_type="goal_created",
-    after=message.text
+    await log_event(
+        actor=message.from_user.id,
+        module="goals",
+        event_type="goal_created",
+        after=message.text
+    )
 )
