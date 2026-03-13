@@ -34,9 +34,9 @@ async def idea_create(message: Message, state: FSMContext):
 
     await message.answer("Идея сохранена ✨")
     await state.clear()
-await log_event(
-    actor=message.from_user.id,
-    module="dates",
-    event_type="idea_added",
-    after=message.text
-)
+    await log_event(
+        actor=message.from_user.id,
+        module="dates",
+        event_type="idea_added",
+        after=message.text
+    )

@@ -34,4 +34,3 @@ async def goal_create(message: Message, state: FSMContext):
         event_type="goal_created",
         after=message.text
     )
-)
