@@ -4,7 +4,7 @@ from aiogram.fsm.state import StatesGroup, State
 from aiogram.fsm.context import FSMContext
 
 from database import SessionLocal
-from models.dateideas import DateIdea
+from models.dates import DateIdea
 from services.eventlog import log_event
 
 router = Router()
